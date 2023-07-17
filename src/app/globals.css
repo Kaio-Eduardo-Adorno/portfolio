@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Freedom-Script';
+  font-style: normal;
+  font-weight: normal;
+  src: url("/public/assets/fonts/Freedom.otf");
+}
+
+.svg-wrap {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+.font-script {
+  font-family: 'Freedom';
+}
+
+body {
+  font-family: 'Freedom';
+  line-height: 1;
+}
