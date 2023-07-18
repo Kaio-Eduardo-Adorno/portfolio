@@ -3,6 +3,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CustomLink } from "@/components/CustomLink";
+import localFont from 'next/font/local'
+
+const freedomFont = localFont({ src: '../../public/assets/fonts/Freedom.otf' })
 
 export const metadata: Metadata = {
   title: "The Life Shit",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body className='flex flex-col min-h-screen'>
+      <body className={`flex flex-col min-h-screen ${freedomFont.className}`}>
         <header className='flex justify-between items-center p-4 bg-main-400 shadow-sm'>
           <Link href='/'>
             <Image
@@ -33,7 +36,7 @@ export default function RootLayout({
             <CustomLink href='/about'>About</CustomLink>
           </nav>
         </header>
-        <main className='p-4 flex-grow bg-main-400 bg-opacity-25 '>
+        <main className='p-4 flex-grow bg-main-400 bg-opacity-25'>
           {children}
         </main>
       </body>
