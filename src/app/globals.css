@@ -2,16 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'Freedom-Script';
-  font-style: normal;
-  font-weight: normal;
-  src: url("/public/assets/fonts/Freedom.otf");
+@layer components {
+  .btn-primary {
+    @apply font-sans rounded-md p-1 outline-none bg-main-400 hover:bg-main-500 focus:bg-main-600;
+  }
+  .input {
+    @apply font-sans rounded-md p-1 outline-none border-main-400 focus:border-main-500 border-solid border-2;
+  }
+  .text-area {
+    @apply font-sans rounded-md p-1 outline-none border-main-400 focus:border-main-500 border-solid border-2 h-24;
+  }
 }
 
-.svg-wrap {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  overflow: hidden;
+.input:-webkit-autofill,.text-area:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px #F7F6F3 inset;
+}
+
+::selection {
+  color: white;
+  background: #D7D1C1;
+  border: 1px solid transparent;
+  border-radius: 15px
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ECE9E1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D7D1C1;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #BFB69B;
+}
+
+.leading-freedom {
+  line-height: 2.5;
+}
+
+@font-face {
+  font-family: 'Material Symbols Rounded';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialsymbolsrounded/v109/syl0-zNym6YjUruM-QrEh7-nyTnjDwKNJ_190FjpZIvDmUSVOK7BDB_Qb9vUSzq3wzLK-P0J-V_Zs-QtQth3-jOc7TOVpeRL2w5rwZu2rIelXxc.woff2) format('woff2');
+}
+
+.material-symbols-rounded {
+  font-family: 'Material Symbols Rounded';
+  font-weight: normal;
+  font-style: normal;
+
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
 }

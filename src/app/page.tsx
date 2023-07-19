@@ -1,15 +1,17 @@
-import Image from "next/image";
+import { Projects } from "@/components/Sections/Projects";
+import { Home } from "@/components/Sections/Home";
+import { About } from "@/components/Sections/About";
+import { Contact } from "@/components/Sections/Contact";
 
-export default function Home() {
+export default function PorfolioSPA() {
   return (
-    <div className='flex flex-col justify-center items-center my-12'>
-      <div className="text-5xl">Work In Progress</div>
-      <Image
-        alt='WIP Poop'
-        src='/assets/svgs/wip.svg'
-        width={280}
-        height={280}
-      />
-    </div>
+    <>
+      <Home />
+      <About />
+      <hr className='border-main-400 border-2 m-12 border-dotted rounded-full' />
+      <Projects />
+      <hr className='border-main-400 border-2 m-12 border-dotted rounded-full' />
+      <Contact />
+    </>
   );
 }
