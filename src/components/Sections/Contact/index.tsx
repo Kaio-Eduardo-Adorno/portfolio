@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
   };
 
   return (
-    <section id='projects' className='flex flex-col p-3 items-center'>
+    <section id='contact' className='flex flex-col p-3 items-center'>
       <div className='leading-freedom flex-shrink text-2xl'>Contact</div>
 
       <form
