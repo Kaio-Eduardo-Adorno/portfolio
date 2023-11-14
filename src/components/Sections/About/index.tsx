@@ -23,13 +23,11 @@ export const About: React.FC = () => (
             Software Developer
           </h4>
           <p className='font-sans mt-4 text-center sm:text-left'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-            accumsan turpis. Integer eget condimentum erat. Curabitur viverra
-            mauris metus, at dapibus quam ultricies vel. Nulla et eros ligula.
-            Donec mi odio, imperdiet eget vehicula ut, vestibulum eget lacus.
-            Integer non felis non leo interdum condimentum. Quisque semper
-            turpis et sem consectetur porttitor. Praesent feugiat sollicitudin
-            felis et blandit. Pellentesque.
+            I&lsquo;m a full stack developer who hates to study, i just try my
+            best to make things work. All my knowledge comes from lots of
+            attempts and failures and i think this is the right way to do things
+            at least for me. I hope you like my projects and my programming
+            style.
           </p>
         </div>
       </div>
